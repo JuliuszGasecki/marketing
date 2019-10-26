@@ -15,7 +15,7 @@ body {
 .dropdownMenu > li {
     float: left;
     background-color: #dedcd9;
-    width: 200px;
+    width: auto;
 }
 
 .dropdownMenu a{
