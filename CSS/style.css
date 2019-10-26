@@ -1,0 +1,32 @@
+body {
+    font-family: 'Abel';font-size: 22px;
+}
+.dropdownMenu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 20px;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    width: 800px;
+}
+
+.dropdownMenu > li {
+    float: left;
+    background-color: #dedcd9;
+    width: 200px;
+}
+
+.dropdownMenu a{
+    display: block;
+    width:150px;
+    margin: auto;
+    text-decoration:none;
+    color: black;
+}
+
+.dropdownMenu a:hover, .dropdownMenu a:focus{
+    background: #bab9b6;
+
+}
