@@ -1,0 +1,39 @@
+#TV
+{
+	background: #000E4A;
+}
+
+#tvHeader h1
+{
+	color: white;
+	font-size: 33px;
+	line-height: 33px;
+	margin: 0px 0px 5px 0px; 
+	padding: 0px 0px 0px 0px;
+}
+
+#tvHeader p
+{
+	color: white;
+	font-size: 27px;
+	line-height: 27px;
+}
+
+.tvMsg 
+{
+	color: #C5C9DB;
+	text-align: left;
+	margin-left: 7px;
+}	
+
+.tvMsg p
+{
+	font-family: 'Arial';
+	font-size: 18px;
+	margin: 5px 0px 5px 0px; 
+	padding: 5px 0px 5px 0px;
+}
+
+
+
+

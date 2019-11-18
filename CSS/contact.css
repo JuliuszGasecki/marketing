@@ -1,0 +1,62 @@
+#contact
+{
+	background: #9CBEE0;
+}
+
+#contactHeader h1
+{
+	color: #000E4A;
+	font-size: 33px;
+	line-height: 33px;
+	margin: 0px 0px 5px 0px; 
+	padding: 0px 0px 0px 0px;
+}
+#contactHeader p
+{
+	color: #000E4A;
+	font-size: 27px;
+	line-height: 27px;
+}
+
+.contactMsg 
+{
+	text-align: left;
+	margin-left: 7px;
+}	
+
+.contactMsg p
+{
+	font-size: 18px;
+	margin: 5px 0px 5px 0px; 
+	padding: 5px 0px 5px 0px;
+}
+
+.contactMsg p1
+{
+	font-family: 'Arial';
+}
+
+#wrapper
+{
+    width: 100%;
+    height: 360px;
+    margin: auto;
+}
+
+#location
+{
+	width: 40%;
+	height: 360px;
+	float: left;
+}
+
+#google
+{
+	padding-top: 15px;
+	margin-left: 40%;
+	height: 360px;
+}	
+	
+
+
+
