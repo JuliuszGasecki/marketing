@@ -6,36 +6,52 @@
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
 	<link href="CSS/fontello.css" rel="stylesheet" type="text/css">
     <link href="CSS/contact.css" rel="stylesheet" type="text/css">
-    <link href="CSS/internet.css" rel="stylesheet" type="text/css">
-    <link href="CSS/TV.css" rel="stylesheet" type="text/css">
+    <link href="CSS/post.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="JS/jquery.scrollTo.min.js"></script>
+	<script src="JS/script.js"></script>
+	<script>
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#TVMenu').click(function() { $.scrollTo($('#TV'), 500); });
+			$('#tnternetMenu').click(function() { $.scrollTo($('#internet'), 500); });
+			$('#promotionMenu').click(function() { $.scrollTo($('#promotion'), 500); });
+			$('#contactMenu').click(function() { $.scrollTo($('#contact'), 500); });	
+			$('homeMenu').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);		
+	</script>
 </head>
 <body>
 	<header>
 		<div id = "menu">
-			<div id = "menuPicture">
+			<div id = "menuPicture">		
 				<i class="icon-list-bullet"></i>
 			</div>
 			<ol class = "dropdownMenu">
 				<li>
 					<i class="icon-home"></i>
-					<a href = "#">Home</a>
+					<a id="homeMenu"href = "#">Home</a>
 				</li>
 				<li>
 					<i class="icon-television"></i>
-					<a href = "#">Telewizja</a>
+					<a id="TVMenu" href = "#">Telewizja</a>
 				</li>
 				<li>
 					<i class="icon-wifi"></i>
-					<a href = "#">Internet</a>
+					<a id="tnternetMenu" href = "#">Internet</a>
 				</li>
 				<li>
 					<i class="icon-percent"></i>
-					<a href = "#">Promocje</a>
+					<a id="promotionMenu" href = "#">Promocje</a>
 				</li>
 				<li>
 					<i class="icon-id-card-o"></i>
-					<a href = "#">Kontakt</a>
+					<a id="contactMenu" href = "#">Kontakt</a>
 				</li>
 			</ol>
 		</div>
@@ -47,11 +63,11 @@
 		<article>
 			<section id="TV">
 				<div class="box">
-					<header id="tvHeader">
+					<header id="postHeader">
 						<h1>Telewizja</h1>
 						<p>Dlaczego warto zdecydować się na naszą usługę?</p>
 					</header>
-					<div class="tvMsg">
+					<div class="postMsg">
 						<p>tekstesktteksgkljngdfkjdfdfdfdfdfdfdfdfdfdfdfdfdfdfgfhois
 						gflnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnh
 						fghoioioioioioioioioioioioioioioioioioioioioioioioioioi
@@ -60,13 +76,28 @@
 					</div>
 				</div>
 			</section>
-			<section id="Internet">
+			<section id="internet">
 				<div class="box">
-					<header id="tvHeader">
+					<header id="postHeader">
 						<h1>Internet</h1>
 						<p>Co możesz zyskać poprzez szybszy internet?</p>
 					</header>
-					<div class="tvMsg">
+					<div class="postMsg">
+						<p>tekstesktteksgkljngdfkjdfdfdfdfdfdfdfdfdfdfdfdfdfdfgfhois
+						gflnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnh
+						fghoioioioioioioioioioioioioioioioioioioioioioioioioioi
+						shooooooooooooooooooooooooooooooon
+						wngur9999999999</p>
+					</div>
+				</div>
+			</section>
+			<section id="promotion">
+				<div class="box">
+					<header id="postHeader">
+						<h1>Promocje</h1>
+						<p>Sprawdź nasze usługi w korzystnych cenach</p>
+					</header>
+					<div class="promotionMsg">
 						<p>tekstesktteksgkljngdfkjdfdfdfdfdfdfdfdfdfdfdfdfdfdfgfhois
 						gflnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnh
 						fghoioioioioioioioioioioioioioioioioioioioioioioioioioi
@@ -82,17 +113,17 @@
 						<p>Prosimy kontaktować się poprzez jedną z dostępnych poniżej form</p>
 					</header>
 					<div class="contactMsg">
-						<p><i class="icon-mail-alt"></i><b>E-mail</b></p>
-						<p1>julbartTV@gmail.com</p1>
-						<p><i class="icon-phone"></i><b>Telefon</b></p>
-						<p1>pn-pt 8:00-16:00</br>+48 000 000 000</p1>\
 						<div id="wrapper">
 							<div id="location">
+								<p><i class="icon-mail-alt"></i><b>E-mail</b></p>
+								<p1>julbartTV@gmail.com</p1>
+								<p><i class="icon-phone"></i><b>Telefon</b></p>
+								<p1>pn-pt 8:00-16:00</br>+48 000 000 000</p1>							
 								<p><i class="icon-location"></i><b>Adres</b></p>
 								<p1>JulBartTV sp. z.o.o</br>aleja Tadeusza Kościuszki 4</br>90-001 Łódź</p1>
 							</div>
 							<div id="google">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2468.986882643112!2d19.451862115779655!3d51.76984697967918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcad4300e2fd5%3A0x1df6392018efa4b0!2zYWwuIFRhZGV1c3phIEtvxZtjaXVzemtpIDQsIDkwLTAwMSDFgcOzZMW6!5e0!3m2!1spl!2spl!4v1574108247680!5m2!1spl!2spl" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2468.986882643112!2d19.451862115779655!3d51.76984697967918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcad4300e2fd5%3A0x1df6392018efa4b0!2zYWwuIFRhZGV1c3phIEtvxZtjaXVzemtpIDQsIDkwLTAwMSDFgcOzZMW6!5e0!3m2!1spl!2spl!4v1574108247680!5m2!1spl!2spl" width="600" height="370" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 							</div>
 						</div>	
 					</div>
