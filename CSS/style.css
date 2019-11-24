@@ -5,21 +5,15 @@ body {
 	font-size: 17px;
 }
 
-#menuPicture
+.scrollup
 {
-	margin: 0;
-	padding: 10px;
-	float: right;
-	text-align: right;
-	font-size: 30px;
-	min-height: 50px;
-	line-height: 200%;
-}
-
-#menuPicture:hover
-{
-	transition: all .4s ease-in-out;
-	transform: scale(1.13) perspective(1px);
+	color: #000000;
+	font-size: 60px;
+	text-decoration: none;
+	position: fixed;
+	right: 25px;
+	bottom: 40px;
+	display: none;
 }
 
 .dropdownMenu{
@@ -50,6 +44,33 @@ body {
     color: #0381FF;
 }
 
+.heroBanner {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-image: url("../img/connectPic.png");
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.heroText h1 {
+	font-size: 50px;
+	text-align: center;
+	transform: translate(-10%, -35%);
+	color: white;
+	text-shadow: 1.5px 0 0 black, 0 -1.5px 0 black, 0 1.5px 0 black, -1.5px 0 0 black;
+}
+
+.heroText p {
+	font-size: 35px;
+	text-align: right;
+	top: 0%;
+	left: 30%;
+	transform: translate(-7.5%, 210%);
+	color: white;
+	text-shadow: 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
+}
 
 .box
 {
@@ -63,6 +84,7 @@ body {
 	margin-bottom: 0px;
 }
 
+
 .info
 {
 	margin-left: auto;
@@ -70,4 +92,24 @@ body {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.info a:link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.info a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.info a:hover {
+  text-decoration: underline;
+  color: #0381FF;
+}
+
+.info a:active {
+  text-decoration: underline;
+  color: #000000;
 }

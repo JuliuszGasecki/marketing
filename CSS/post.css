@@ -13,6 +13,57 @@
 	background: #1484BD;
 }
 
+#wrapper
+{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.til1
+{
+	background-color: tomato;
+	width: 45%;
+	height: 300px;
+	float: left;
+}
+
+.til1:hover
+{
+	background-color: white;
+	background-image: url("../img/pdfIcon.png");
+	display: cover;
+	background-repeat:   no-repeat;
+	background-position: center center; 
+}
+
+.til2
+{
+	background-color: orange;
+	margin-left: 55%;
+	height: 300px;
+}
+
+.til2:hover 
+{
+	background-color: white;
+	background-image: url("../img/pdfIcon.png");
+    display: cover;
+	background-repeat:   no-repeat;
+	background-position: center center; 
+}
+
+a.tilelink
+{
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	transform: translate(0%, 0%);
+	text-decoration: none;
+	display: block;
+	width: 450px;
+	height: 300px;
+}
 
 #postHeader h1
 {
@@ -32,6 +83,7 @@
 
 .postMsg 
 {
+	word-wrap: break-word;
 	color: #C5C9DB;
 	text-align: left;
 	margin-left: 0px;
@@ -47,6 +99,7 @@
 
 .promotionMsg
 {
+	word-wrap: break-word;
 	color: #EAF4FA;
 	text-align: left;
 	margin-left: 7px;

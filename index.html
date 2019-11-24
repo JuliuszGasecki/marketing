@@ -18,45 +18,52 @@
 			$.scrollTo(0);
 			
 			$('#TVMenu').click(function() { $.scrollTo($('#TV'), 500); });
-			$('#tnternetMenu').click(function() { $.scrollTo($('#internet'), 500); });
+			$('#internetMenu').click(function() { $.scrollTo($('#internet'), 500); });
 			$('#promotionMenu').click(function() { $.scrollTo($('#promotion'), 500); });
-			$('#contactMenu').click(function() { $.scrollTo($('#contact'), 500); });	
-			$('homeMenu').click(function() { $.scrollTo($('body'), 1000); });
+			$('#contactMenu').click(function() { $.scrollTo($('#contact'), 500); });
+			$('.icon-id-card-o').click(function() { $.scrollTo($('#contact'), 500); });			
+			$('.icon-television').click(function() { $.scrollTo($('#TV'), 500); });			
+			$('.icon-wifi').click(function() { $.scrollTo($('#internet'), 500); });			
+			$('.icon-percent').click(function() { $.scrollTo($('#promotion'), 500); });			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>150) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
 		}
 		);		
 	</script>
 </head>
 <body>
+	<a href="#" class="scrollup"><i class="icon-home"></i></a>
 	<header>
 		<div id = "menu">
-			<div id = "menuPicture">		
-				<i class="icon-list-bullet"></i>
-			</div>
-			<ol class = "dropdownMenu">
+			<ol class = "dropdownMenu">				
 				<li>
-					<i class="icon-home"></i>
-					<a id="homeMenu"href = "#">Home</a>
-				</li>
-				<li>
-					<i class="icon-television"></i>
+					<i class="icon-television" style="cursor: pointer;"></i>
 					<a id="TVMenu" href = "#">Telewizja</a>
 				</li>
 				<li>
-					<i class="icon-wifi"></i>
-					<a id="tnternetMenu" href = "#">Internet</a>
+					<i class="icon-wifi" style="cursor: pointer;"></i>
+					<a id="internetMenu" href = "#">Internet</a>
 				</li>
 				<li>
-					<i class="icon-percent"></i>
-					<a id="promotionMenu" href = "#">Promocje</a>
+					<i class="icon-percent" style="cursor: pointer;"></i>
+					<a id="promotionMenu" href = "#">Cennik/Promocje</a>
 				</li>
 				<li>
-					<i class="icon-id-card-o"></i>
+					<i class="icon-id-card-o" style="cursor: pointer;"></i>
 					<a id="contactMenu" href = "#">Kontakt</a>
 				</li>
 			</ol>
 		</div>
-		<div id = "banner">
-
+		<div class="heroBanner">
+			<div class="heroText">
+				<h1>JulBartTV</h1>
+				<p>Połączymy Cię ze światem</p>
+			</div>
 		</div>
 	<header>
 	<main>
@@ -68,11 +75,9 @@
 						<p>Dlaczego warto zdecydować się na naszą usługę?</p>
 					</header>
 					<div class="postMsg">
-						<p>tekstesktteksgkljngdfkjdfdfdfdfdfdfdfdfdfdfdfdfdfdfgfhois
-						gflnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnh
-						fghoioioioioioioioioioioioioioioioioioioioioioioioioioi
-						shooooooooooooooooooooooooooooooon
-						wngur999999999ttttttttttttttttttttttt9ttttttttttttttttttttttttttttttttttttt</p>
+						<p>Oferujemy pełen profesjonalizm, niskie ceny i o wiele więcej. Do każdego klienta podchodzimy z pełnym szacunkiem i profesjonalizmem.
+						Umożliwiamy wypożyczenie odbiornika, jak i anteny oraz podłączenie telewizji w Twoim domu. Nasze ceny są konkurencyjne.</br>
+						Jeśli chcesz dowiedzieć się więcej, zajrzyj do sekcji kontakt i wybierz jedną z 3 dostępnych opcji <i class="icon-address-book-o" style="font-size: 20px;cursor: pointer;"></i> kontaktu.</p>
 					</div>
 				</div>
 			</section>
@@ -83,26 +88,30 @@
 						<p>Co możesz zyskać poprzez szybszy internet?</p>
 					</header>
 					<div class="postMsg">
-						<p>tekstesktteksgkljngdfkjdfdfdfdfdfdfdfdfdfdfdfdfdfdfgfhois
-						gflnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnh
-						fghoioioioioioioioioioioioioioioioioioioioioioioioioioi
-						shooooooooooooooooooooooooooooooon
-						wngur9999999999</p>
+						<p>Szybki internet w dzisiejszych czasach to podstawa biznesu jak i wygodnego użytkowania wszelakich serwisów online.
+						Dzięki nam szybciej pobierzesz ulubioną grę, będziesz mógł oglądać filmy w wyższej rozdzielczości bez żadnych zacięć, a przesyłanie plików nie będzie trwało już wieczność.
+						Nasze stabilne łącze doskonale sprawdzi się również w rozgrywkach sieciowych.</p>
 					</div>
 				</div>
 			</section>
 			<section id="promotion">
 				<div class="box">
 					<header id="postHeader">
-						<h1>Promocje</h1>
-						<p>Sprawdź nasze usługi w korzystnych cenach</p>
+						<h1>Cennik/Promocje</h1>
+						<p>Sprawdź nasze usługi w jeszcze korzystniejszych cenach</p>
 					</header>
 					<div class="promotionMsg">
-						<p>tekstesktteksgkljngdfkjdfdfdfdfdfdfdfdfdfdfdfdfdfdfgfhois
-						gflnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnh
-						fghoioioioioioioioioioioioioioioioioioioioioioioioioioi
-						shooooooooooooooooooooooooooooooon
-						wngur9999999999</p>
+						<p>Jeśli szukasz promocji to dobrze trafiłeś. Oferujemy szereg pakietów, dzięki którym zaoszczędzisz swoje pieniądze.  
+						Sprawdź nasze bogate pakiety:</p>						
+						<div id="wrapper">
+							<div class="til1">
+								<a href="Pakiety.pdf" target="_blank" class="tilelink">Pakiety</a>
+							</div>
+							<div class="til2">
+								<a href="Promocje.pdf" target="_blank" class="tilelink">Promocje</a> 								
+							</div>
+						</div>							
+						<p>Dodatkowo, każdą z podanych przez nas cen możesz wynegocjować na jeszcze korzystniejszych warunkach. Zadzwoń na podany numer: <b>+48 000 000 000</b> i dowiedz się, ile możesz zaoszczędzić!</p>
 					</div>
 				</div>
 			</section>
@@ -113,7 +122,7 @@
 						<p>Prosimy kontaktować się poprzez jedną z dostępnych poniżej form</p>
 					</header>
 					<div class="contactMsg">
-						<div id="wrapper">
+						<div id="wrapperContact">
 							<div id="location">
 								<p><i class="icon-mail-alt"></i><b>E-mail</b></p>
 								<p1>julbartTV@gmail.com</p1>
@@ -133,7 +142,9 @@
 	</main>	
 	<footer>
 		<div class="info">
-			Polityka prywatności | Regulamin | Wszelkie prawa zastrzeżone &copy; 2019
+			<a href="Polityka prywatności.pdf" target="_blank" >Polityka prywatności</a> |
+			<a href="Regulamin.pdf" target="_blank">Regulamin</a> | 
+			Wszelkie prawa zastrzeżone &copy; 2019
 		</div>
 	</footer>
 </body>
