@@ -28,29 +28,11 @@
 	float: left;
 }
 
-.til1:hover
-{
-	background-color: white;
-	background-image: url("../img/pdfIcon.png");
-	display: cover;
-	background-repeat:   no-repeat;
-	background-position: center center; 
-}
-
 .til2
 {
 	background-color: orange;
 	margin-left: 55%;
 	height: 300px;
-}
-
-.til2:hover 
-{
-	background-color: white;
-	background-image: url("../img/pdfIcon.png");
-    display: cover;
-	background-repeat:   no-repeat;
-	background-position: center center; 
 }
 
 a.tilelink
