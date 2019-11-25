@@ -22,7 +22,7 @@
 
 .til1
 {
-	background-color: tomato;
+	background-color: #7692FF;
 	width: 45%;
 	height: 300px;
 	float: left;
@@ -30,7 +30,7 @@
 
 .til2
 {
-	background-color: orange;
+	background-color: #3D518C;
 	margin-left: 55%;
 	height: 300px;
 }
