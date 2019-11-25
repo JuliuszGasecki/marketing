@@ -1,11 +1,16 @@
+#about
+{
+	background: #000E4A;
+}
+
 #internet
 {
-	background: #1259A1;
+	background: #364156;
 }
 
 #TV
 {
-	background: #000E4A;
+	background: #626868;
 }
 
 #promotion
@@ -66,7 +71,7 @@ a.tilelink
 .postMsg 
 {
 	word-wrap: break-word;
-	color: #C5C9DB;
+	color: #e0e2eb;
 	text-align: left;
 	margin-left: 0px;
 }	
